@@ -16,6 +16,16 @@ O projeto de acessibilidade para um cardápio online visa garantir que pessoas c
 * Amália 
 * Leonardo
 
+## Design 
+Protótipo via figma
+
+https://www.figma.com/file/qItLWAO0tvq2iugtOZcFTN/Pag-site?type=design&node-id=0%3A1&mode=dev&t=zag8O4alT8bB5ZgM-1
+
+Bliblioteca do bootstrap exportada para o figma:
+
+https://www.figma.com/file/hrk6mrlfr58VuU6lM1EU2e/Bootstrap-5-UI-Kit?type=design&node-id=3888%3A1152&mode=dev&t=zag8O4alT8bB5ZgM-1
+
+
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
