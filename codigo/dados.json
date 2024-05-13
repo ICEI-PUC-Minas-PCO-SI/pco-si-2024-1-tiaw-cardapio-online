@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Gold Burger",
+    "price": 9.99,
+    "image": "./img/gold-1.png"
+  },
+  {
+    "id": 2,
+    "name": "Silver Burger",
+    "price": 7.99,
+    "image": "./img/gold-2.png"
+  }
+]
