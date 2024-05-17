@@ -1,0 +1,380 @@
+/*ZERANDO AS CONFIGURAÇÕES*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter' , sans-serif;
+}
+/*CONFIGURANDO O TAMANHO E A COR DO CABEÇALHO*/
+header{
+    background-color: #FFC839;
+    box-shadow: 0px 3px 10px #f7df74;
+}
+/*TAMANHO DA LOGO */
+.logo img{
+    height: 50px;
+    width: 120px;
+    margin-left: 10px;
+   
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+/*POSICIONAMENTO DA LOGO*/
+.logo{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+}
+.logo h1{
+    color: red;
+}
+/*POSICIONAMENTO DOS ITENS DENTRO DO CABEÇALHO*/
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.nav-item {
+    margin: 0 15px;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: red;
+    font-weight: 400;
+    font-family: Poppins;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+/*DESENVOLVIMETO DA RESPONSIVIDADE DO CABEÇALHO*/
+@media screen and (max-width: 730px) {
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .nav-item{
+        display: none;
+    }
+    .login-button{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item{
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button{
+        display: block;
+        padding: 1rem 2rem; 
+    }
+    .mobile-menu .login-button button{
+        width: 100%;
+    }
+    .open{
+        display: block;
+    }
+    .barra{
+        opacity: 0;
+    }
+}
+/*FAZENDO A PARTE DA BARRA LATERAL*/
+.sidebar{
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 950px;
+    padding: 20px 10px 30px 10px ;
+    border-radius: 1px solid black;
+    background-color:#faedcd;
+    box-shadow: 0px 3px 10px #f9f0da;
+    transition: all 0.35s;
+    float: left;
+    
+    
+}
+img{
+    width: 50px;
+    min-height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s;
+    margin-left: 10px;
+}
+.sidebar-header{
+    width: 100%;
+    margin-bottom: 16px;
+    position: relative;
+}
+.sidebar button{
+    height: 60px;
+    background-color: transparent;
+    border: 0;
+    font-family: inherit;
+    color: red;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    font-family: Poppins;
+    
+}
+.sidebar button > span{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 48px;
+    padding: 0px 30px 0px 20px;
+    border-radius: 10px;
+    line-height: 1;
+    transition: all 0.4s;
+
+}
+.sidebar button:hover > span{
+    background-color: #FFC839;
+}
+.sidebar button i{
+    position: relative;
+    font-size: 28px;
+    transition: 0.2s;
+}
+.sidebar button span{
+    font-size: 16px;
+}
+.sidebar > nav{
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.button{
+    margin-left: 10px;
+}
+@media (width < 920px){
+    .sidebar{
+        width: 72px;
+    }
+
+
+.sidebar button > span{
+    width: 20px;
+}
+main{
+    overflow: hidden;
+    
+}
+.barra{
+    overflow: hidden;
+}
+p{
+    overflow: hidden;
+    float: left;
+    margin-left: 60px;
+}
+.nav-item2{
+    margin-right: 100px;
+    opacity: 0;
+}
+.h2{
+    font-size: 20px;
+    margin-left: 0px;
+}
+.sidebar{
+    height: 3758px;
+}
+span.nav-link2{
+    margin-left: 10px;
+}
+.input{
+    opacity: 0;
+}
+#search-input{
+    opacity: 0;
+}
+}
+/*DESENCOLVENDO A BARRA DE PESQUISA */
+.search-container {
+    margin: 20px auto;
+    max-width: 200px;
+    text-align: center;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+#search-results {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    text-align: left;
+}
+
+#search-results li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+   
+}
+
+#search-results li:last-child {
+    border-bottom: none;
+    
+}
+
+#search-results li:hover {
+    background-color: #f4f4f4;
+    cursor: pointer;
+    
+}
+
+/*PARTE DO TEXTO*/
+main{
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    overflow: hidden;
+    float: left;
+    margin: 20px;
+
+}
+h2{
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+h3{
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+h4{
+    margin-left: 30px;
+    margin-top: 50px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+a {
+    display: block;
+    margin-bottom: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+.nav-link2 {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: red;
+    font-weight: 400;
+    font-family: Poppins;
+    list-style: none;
+}
+.main .section1 .h2{
+    font-size: 50px;
+}
+#text{
+    background-color: #FFC839;
+    width: 40px;
+    position: absolute;
+    border-radius: 0;
+    border: solid;
+}
+.barra{
+    padding: 10px;
+}
+
+
+/* Estilos para a barra de pesquisa */
+.search-container {
+    margin-top: 20px;
+  }
+  
+  #searchInput {
+    width: 180px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: 20px;
+    outline: 0;
+    background-color:#f7df74;
+  }
+  
+  #searchResults {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px; 
+  }
+  
+  #searchResults li {
+    margin-bottom: 5px;
+    margin-left: 20px;
+  }
+
+  /*PARTE DO FOOTER*/
+  footer{
+    background-color: #f8f5e9;
+    height: 100px;
+    align-items: center;
+    border: 50px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
