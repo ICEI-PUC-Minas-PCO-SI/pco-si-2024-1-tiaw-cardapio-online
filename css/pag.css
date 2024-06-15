@@ -1,0 +1,368 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 90vw;
+    
+}
+/*DESENVOLVENDO O CARROSSEL*/
+.content {
+    height: 60%;
+    width:55%;
+    border-radius: 10px;
+    margin-left: 350px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.content .slide img {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+.navigation {
+    bottom: 60px;
+    left: 150px;
+    display: flex;
+    margin-left: 700px
+}
+
+.bar {
+
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+    margin-top: 450px;
+
+    
+}
+
+.bar:hover {
+    background-color: #000000;
+    
+}
+
+input {
+  display: none;
+ 
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    background-size: cover;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+    
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+} 
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+} 
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+} 
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+} 
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+} 
+/*FAZENDO AS OUTRA PARTE*/
+.card-image{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    background: #f9cd66;
+    padding: 3px;
+    display: flex;
+    
+    
+}
+.slide-content{
+    margin:0 40px ;
+    display: block;
+    width: 250px;
+    float: right;
+    align-items: center;
+   
+}
+.card-image .card-img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color:antiquewhite;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 15%;
+    padding: 0px;
+}
+
+.slide-content{
+    margin: 0px 40px;
+}
+
+.image-content, card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.name{
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+.description{
+    
+    text-align: center;
+    font-size: 20px;
+    color: #707070;
+    margin-top: -20px;
+}
+
+.image-content{
+    row-gap: 5px;
+    position: relative;
+    padding: 25px 0;
+    
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color:#FFF;
+    padding: 8px 16px ;
+    background-color: #f9c84d;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all o.3s ease;
+    display: block;
+
+}
+
+.button:hover{
+    background-color:#fadd9a;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #efb93c;
+    border-radius: 0px 25px 0 25px;
+    
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color:#f2be3c;
+    
+}
+.overlay::after{
+    border-radius: 0 25px 0 0 ;
+    background-color:antiquewhite;
+}
+.tudo1{
+    display: block;
+}
+.footer{
+    background-color: #FFF;
+    width: 1520px;
+    height: 300px;
+}
+.tex{
+
+    font-family: Poppins;
+    font-size: 70px;
+    margin-left: 680px;
+}
+.text2{
+
+    font-family: Poppins;
+    font-size: 70px;
+    margin-left: 600px;
+}
+.tex3{
+
+    font-family: Poppins;
+    font-size: 70px;
+    margin-left: 635px;
+}
+.tex4{
+
+    font-family: Poppins;
+    font-size: 70px;
+    margin-left: 650px;
+}
+.tex5{
+
+    font-family: Poppins;
+    font-size: 70px;
+    margin-left: 650px;
+}
+.tex6{
+
+    font-family: Poppins;
+    font-size: 70px;
+    margin-left: 650px;
+}
+.logo img{
+    width: 120px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+@media screen and (max-width: 730px) {
+    .card{
+        margin-left: 0;
+    }
+    
+    .content {
+        height: 45%;
+        width: 90%;
+        margin-left: 20px;
+        
+    }
+    .bar{
+        margin-left: 0px;
+        margin-right: 30px;
+        
+    }
+    .navigation {
+        margin-left: 100px;
+    }
+    body{
+        background-image: linear-gradient(to left, #f4f4f4, #f0f0ef );
+    }
+    .text2{
+        margin-left: 0;
+        text-align: center;
+    }
+    .tex{
+        margin-left: 37%;
+    }
+    .text2{
+        margin-left: 10%;
+    }
+    .tex3{
+        margin-left: 17%;
+    }
+    .tex4{
+        margin-left: 30%;
+    }
+    .tex5{
+        margin-left: 30%;
+    }
+    .tex6{
+       margin-left: 0px;
+    }
+    .footer{
+        margin-top: 420%;
+
+    }
+}
+
+@media screen and (min-width:730px) and (max-width: 1000px){
+    .content {
+        height: 45%;
+        width: 90%;
+        margin-left: 20px;
+
+    }
+    .bar{
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+    .navigation {
+        margin-left: 100px;
+    }
+    body{
+        background-image: linear-gradient(to left, #f4f4f4, #f0f0ef );
+    }
+    .text2{
+        margin-left: 0;
+        text-align: center;
+    }
+    .tex{
+        margin-left: 37%;
+    }
+    .text2{
+        margin-left: 10%;
+    }
+    .tex3{
+        margin-left: 17%;
+    }
+    .tex4{
+        margin-left: 30%;
+    }
+    .tex5{
+        margin-left: 30%;
+    }
+    .tex6{
+       margin-left: 0px;
+    }
+}
+    
+h4{
+    font-size: 20px;
+    margin-top: -10px;
+    text-align: center;
+}
+.icons{
+    margin-left: 140px;
+    margin-top: -45px;
+    padding: 5px;
+    font-size: 20px;
+    color: #707070;
+}
+.icons2{
+    margin-left: 190px;
+    padding: 5px;
+    margin-top: -30px;
+    font-size: 20px;
+    color: #707070
+    
+}
+
+.icons2:hover{
+    cursor: pointer;
+    color: #000000;
+}
+.icons:hover{
+    cursor: pointer;
+    color: #000000;
+}
