@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url("../assets/img/fundo-amarelo.jpg");
+}
+
+.main {
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.orders-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.order-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 20px;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.order-card img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.order-card h2 {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.order-card p {
+  margin: 0 0 10px;
+  color: #666;
+}
+
+.backRouter {
+  display: flex;
+  justify-content: start;
+  margin-top: 20px;
+
+  button {
+    color: white;
+    padding: 20px 35px;
+    font-size: 17px;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+    background-color: #bb3939;
+    margin-left: 450px;
+  }
+}
+
+.remove-button {
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 11px;
+  cursor: pointer;
+  background-color: #292927;
+}
+
+button {
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 11px;
+  cursor: pointer;
+  background-color: #292927;
+}

@@ -74,5 +74,15 @@
             "imagem": "comida1.jpg",
             "favorito": true
         }
-    ]
+    ],
+    "pedidos": [
+        {
+          "id": "4e66",
+          "nome": "Hambúrguer",
+          "valor": "34,99",
+          "descricao": "Hambúrguer de picanha, queijo prato, bacon, tomate, alface e cebola.",
+          "tipo": "Burger",
+          "image": ""
+        }
+      ]
 }
