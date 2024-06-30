@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre sua avaliação</title>
+    <link rel="stylesheet" href="\codigo\src\assets\css\cadastroavaliacao.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Cadastre sua avaliação</h1> <br>
+            <p>Deixe sua avaliação abaixo</p> <br>
+        </header>
+        <div class="star-rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="muito satisfeito">★</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="satisfeito">★</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="bom">★</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="ruim">★</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="pessimo">★</label>
+        </div>
+        <form>
+            <fieldset>
+                <div class="input-wrapper">
+                    <input type="text" id="event-title">
+                </div>
+                    
+                <div>
+                    <a href="#" class="button-link" id="Enviar">Enviar</a>
+                    <input type="submit" id="Cancelar" value="Cancelar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+        <script src="\codigo\src\assets\js\cadastroavaliacao.js"></script>
+</html>

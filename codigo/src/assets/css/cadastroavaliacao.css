@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+header h1 {
+    font-family: 'Archivo', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: white;
+    margin-bottom: 24px;
+    
+    
+}
+
+header p {
+    line-height: 26px;
+    font-size: 16px;
+    color: #1BCF92;
+    
+}
+
+body, input, button, select, textarea {
+    font-family: 'Poppins';
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFC839;
+}
+
+body::before {
+    content: '';
+    width:100%;
+    height: 368px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #2D2D2D;
+
+}
+
+.page {
+    width: 736px;
+    margin: auto;
+
+}
+
+header {
+    
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    background: #fafafc;
+    min-height: 300px;
+    margin-top: 30px;
+    border-radius: 8px;
+    padding: 40px;
+
+}
+
+fieldset {
+    border: none;
+
+}
+
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.input-wrapper input {
+    border: 1px solid #e6e6f0;
+    box-sizing: border-box;
+    background: #fafafc;
+    border-radius: 8px;
+    height: 14rem;
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #2D2D2D;
+    
+}
+
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    margin-top: 50;
+    width: 33rem;
+    
+
+    
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+    border-radius: 50%;
+}
+
+.star-rating label {
+    color: #ddd;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 0 10px;
+    
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+    color: #FFC839;
+}
+
+#Cancelar , .button-link{
+    
+    display: inline-block;
+    padding: 1px 50px;
+    font-size: 16px;
+    color: #2D2D2D;
+    background-color:#FFC839;
+    text-align: center;
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-left: 7rem;
+    margin-top: 1rem;
+
+}
+
