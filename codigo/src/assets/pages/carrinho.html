@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleCarrinho.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Acme:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--COMEÇO DA BARRA LATERAL-->
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="/imgs/logofod.jpg" id="user_avatar" alt="Avatar">
+                <p class="user_infos">
+                    <span class="item-description">
+                    </span>
+                </p>
+            </div>
+
+            <ul id="side_items">
+                <li class="side-item">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="item-description">
+                            Home
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-clipboard"></i>
+                        <span class="item-description">
+                            Cardápio
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item active">
+                    <a href="carrinho.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="item-description" id="partCarrinho">
+                            Carrinho de compras
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="item-description">
+                            Históricos de pedidos
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="item-description">
+                            Favoritos
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-comment"></i>
+                        <span class="item-description">
+                            Feedback
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-phone"></i>
+                        <span class="item-description">
+                            Contato
+                        </span>
+                    </a>
+                </li>
+
+                <button id="open_btn">
+                    <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+                </button>
+        </div>
+
+        <div id="perfil">
+            <button id="perfil_btn">
+                <i class="fa-solid fa-user"></i>
+                <span class="item_description">
+                    Perfil
+                </span>
+            </button>
+        </div>
+    </nav>
+    <!--FINAL DA BARRA LATERAL E COMEÇO DO MENU-->
+    <div class="content-conteiner-option-selec">
+        <div class="partCarrinho">
+            <i class="carrinho">Carrinho</i>
+            <div class="product-flex-column" id="productContainer">
+                <!-- templateProduct -->
+                <div class="productElement" id="templateProduct" style="display: none;">
+                    <div class="content-product-flex-row">
+                        <div class="slider">
+                            <img src="" alt="">
+                        </div>
+                        <div class="description-product">
+                            <div class="quantity-control">
+                                <div class="yyyy">Nome do Produto</div>
+                                <div class="descri">Descrição do Produto</div>
+                                <div class="quantity-adjuster">
+                                    <div class="qty">
+                                        <img class="minus-icon" src="/assets/icons/minus.svg" />
+                                        <div class="quantity-value">1</div>
+                                        <img class="plus-icon" src="/assets/icons/plus.svg" />
+                                    </div>
+                                    <div class="remover">Remover</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="r2999">R$29.99</div>
+                    </div>
+                    <div class="background"></div>
+                </div>
+
+                <!-- products added here -->
+            </div>
+        </div>
+
+        <div style="display: none;" class="part-payment">
+            <a class="pagamento">Pagamento</a>
+            <section class="payment-method-parent">
+                <div class="payment-method">
+                    <div class="payment-method1">Metodos de pagamentos</div>
+                    <div class="method-details">
+
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="add-payment-method">
+                    <img src="assets/icons/plus2.svg" />
+                    <a href="cartao.html">
+                        <div class="button-add-payment-method">
+                            <div class="addButonMethod">Adicionar Metodo de pagamento</div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+
+        <div class="order-summary">
+            <div class="resumo-header">
+                <h3 class="resumo">Resumo</h3>
+            </div>
+            <div class="price-values">
+                <!-- template-headerPrice added here -->
+            </div>
+            <div class="divider"></div>
+            <div class="headerPrice">
+                <div class="preo">TOTAL</div>
+                <div class="price-content totalPrice">R$0.00</div>
+            </div>
+            <button class="proceed">
+                <div class="button">Fazer pagamento</div>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="scriptCarrinho.js"></script>
+</body>
+
+<!-- template-headerPrice -->
+<div class="headerPrice" id="template-headerPrice" style="display: none;">
+    <div class="preo">Produto</div>
+    <div class="price-content">R$0.00</div>
+</div>
+
+<!-- templateCard -->
+<div class="method1" id="templateCard" style="display: none;">
+    <div class="method-selection">
+        <input class="selected-area" type="radio" />
+
+        <div class="card-details">
+            <img src="assets/icons/visa.svg" />
+
+            <div class="div">•••• 6754</div>
+        </div>
+    </div>
+    <div class="expiry">
+        <div class="expires-112020">Expira 06/2021</div>
+        <a class="removeMethod">Remover</a>
+    </div>
+</div>
+
+</html>
