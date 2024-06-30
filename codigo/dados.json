@@ -77,12 +77,54 @@
     ],
     "pedidos": [
         {
-          "id": "4e66",
-          "nome": "Hambúrguer",
-          "valor": "34,99",
-          "descricao": "Hambúrguer de picanha, queijo prato, bacon, tomate, alface e cebola.",
-          "tipo": "Burger",
-          "image": ""
+            "id": "4e66",
+            "nome": "Hambúrguer",
+            "valor": "34,99",
+            "descricao": "Hambúrguer de picanha, queijo prato, bacon, tomate, alface e cebola.",
+            "tipo": "Burger",
+            "image": ""
+        }
+    ],
+    "historico": [
+        {
+          "id": "1",
+          "nome": "Hambúrguer de Picanha",
+          "quantidade": 1,
+          "valor": 150.00,
+          "data": "30/06/2024",
+          "hora": "14:30",
+          "codigoPedido": "12345ABC",
+          "imagem": "assets/images/hamburguer.jpg"
+        },
+        {
+          "id": "2",
+          "nome": "Salada Caesar",
+          "quantidade": 2,
+          "valor": 150.00,
+          "data": "30/06/2024",
+          "hora": "14:30",
+          "codigoPedido": "12346DEF",
+          "imagem": "assets/images/Salada.jpg"
+        },
+        {
+          "id": "3",
+          "nome": "Pizza de Calabresa",
+          "quantidade": 1,
+          "valor": 150.00,
+          "data": "30/06/2024",
+          "hora": "14:30",
+          "codigoPedido": "12347GHI",
+          "imagem": "assets/images/pizza.jpg"
+        },
+        {
+          "id": "4",
+          "nome": "Pastel de Carne",
+          "quantidade": 5,
+          "valor": 150.00,
+          "data": "30/06/2024",
+          "hora": "14:30",
+          "codigoPedido": "12348JKL",
+          "imagem": "assets/images/pastel.jpg"
         }
       ]
 }
