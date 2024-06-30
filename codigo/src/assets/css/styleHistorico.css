@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-image: url("../assets/images/bg2.png");
+  background-image: url("../images/bg2.png");
   background-position: right center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -11,12 +11,12 @@ body {
 
 @font-face {
   font-family: "PoppinsMedium";
-  src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Noto";
-  src: url("assets/fonts/NotoSans-Regular.ttf") format("truetype");
+  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
 }
 
 .main {
