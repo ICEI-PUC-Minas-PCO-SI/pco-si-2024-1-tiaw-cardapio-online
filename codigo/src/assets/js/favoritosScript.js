@@ -8,7 +8,7 @@ fetch("http://localhost:3000/favoritos")
             <div class="div-icon">
                 <img
                     class="icone-coracao"
-                    src="assets/icons/notFilledHeart.png"
+                    src="assets/images/notFilledHeart.png"
                     alt="icone-coracao"
                 />
             </div>
@@ -49,9 +49,9 @@ function changeHeartIcon() {
 
 function changeIcon(iconElement) {
   if (iconElement.getAttribute("src").includes("notFilledHeart")) {
-    iconElement.src = "assets/icons/filledHeart.png";
+    iconElement.src = "assets/images/filledHeart.png";
   } else {
-    iconElement.src = "assets/icons/notFilledHeart.png";
+    iconElement.src = "assets/images/notFilledHeart.png";
   }
 }
 
