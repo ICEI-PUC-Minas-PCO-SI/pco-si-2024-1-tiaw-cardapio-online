@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
           return response.json();
         })
         .then(data => {
-          window.location.href = 'http://127.0.0.1:5501/html/pedidosCadastradosList.html';
+          window.location.href = 'http://127.0.0.1:5501/codigo/src/assets/pages/pedidosCadastradosList.html';
         })
         .catch(error => {
           console.error("Erro ao salvar o pedido:", error);
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return response.json();
       })
       .then(data => {
-        window.location.href = 'http://127.0.0.1:5501/html/pedidosCadastradosList.html';
+        window.location.href = 'http://127.0.0.1:5501/codigo/src/assets/pages/pedidosCadastradosList.html';
       })
       .catch(error => {
         console.error("Erro ao salvar o pedido:", error);
