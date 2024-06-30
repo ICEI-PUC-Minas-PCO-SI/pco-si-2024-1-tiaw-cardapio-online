@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGAMENTO POR CARTÃO DE CRÉDITO</title>
+    <link rel="stylesheet" href="codigo\src\assets\css\styleCartao.css">
+</head>
+<body>
+    <main class="container">
+        <section class="ui">
+            <div class="container-left">
+                <form id="credit-card">
+                    <div class="number-container">
+                        <label>NÚMERO DO CARTÃO</label>
+                        <input type="text" name="card-number" id="card-number" maxlength="19" placeholder="6666 7777 1111 2222"
+                        required
+                        onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+                    </div>
+                    <div class="name-container">
+                        <label>TITULAR DO CARTÃO</label>
+                        <input type="text" name="name-text" id="name-text" maxlength="30" placeholder="GABRIEL HENRIQUE"
+                        required
+                        onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123) || event.key == ' '">
+                    </div>
+                    <div class="infos-container">
+                        <div class="expiration-container">
+                            <label>Validade</label>
+                            <input type="text" name="valid-thru-text" id="valid-thru-text" maxlength="5" placeholder="04/24"
+                            required
+                            
+                            onkeypress="return event.charCode >=48 && event.charCode <= 57">
+                        </div>
+                        <div class="cvv-container">
+                            <label>CVV</label>
+                            <input type="text" name="cvv-text" id="cvv-text" maxlength="4" placeholder="666"
+                            required
+                            onkeypress="return event.charCode >=48 && event.charCode <= 57">
+                        </div>
+                    </div>
+                    <input type="submit" value="FINALIZAR" id="add">
+                </form>
+            </div>
+            <div class="container-right">
+                <div class="card">
+                    <div class="intern">
+                        <img class="approximation" src="codigo\src\assets\images\aprox.png" alt="aproximation">
+                        <div class="card-number">
+                            <div class="number-vl">6666 7777 1111 2222</div>
+                        </div>
+                        <div class="card-holder">
+                            <label>Titular</label>
+                            <div class="name-vl">GABRIEL HENRIQUE</div>
+                        </div>
+                        <div class="card-infos">
+                            <div class="exp">
+                                <label>Validade</label>
+                                <div class="expiration-vl">04/24</div>
+                            </div>
+                            <div class="cvv">
+                                <label>CVV</label>
+                                <div class="cvv-vl">666</div>
+                            </div>
+                        </div>
+                        <img class="chip" src="codigo\src\assets\images\chip.png" alt="chip">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="codigo\src\assets\js\scriptCartao.js"></script>
+</body>
+</html>

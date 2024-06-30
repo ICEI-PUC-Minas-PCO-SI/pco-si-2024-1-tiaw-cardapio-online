@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 3% auto;
+}
+
+.ui {
+    border: 0;
+    box-shadow: 0 0 10´x 0 rgba(149, 184, 209, .5);
+    border-radius: 10px;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10%;
+    display: flex;
+    gap: 20px;
+    background-color: #FFC839;
+}
+
+.container-left {
+    width: 50%;
+}
+
+.container-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 230px;
+    margin: 0 auto;
+    background: linear-gradient(45deg, #c10000 0%, #c10000 35%, #000000 100%);
+    border: 1px solid rgb(244, 244, 244);
+    border-radius: 15px;
+}
+
+.intern {
+    padding: 20px;
+}
+
+.approximation {
+    width: 30px;
+    transform: rotate(90deg);
+}
+
+.chip {
+    height: 40px;
+    position: relative;
+    left: 87%;
+    bottom: 20px;
+}
+
+.card-number {
+    margin-top: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    display: flex;
+}
+
+.card-holder {
+    color: #ffffff;
+}
+
+.card label {
+    font-size: .7rem;
+    color: white;
+}
+
+.card-infos {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+#credit-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.1rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.number-container, .name-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.expiration-container, .cvv-container {
+    width: 50%;
+}
+
+input {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(42, 42, 42);
+    font-weight: 600;
+    font-size: 1.1rem;
+    outline: 0;
+    width: 90%;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #c10000;
+}
+
+input#valid-thru-text, input#cvv-text {
+    width: 80%;
+}
+
+input[type="submit"] {
+    width: 95%;
+    background-color: #c10000;
+    cursor: pointer;
+}
+
+.infos-container {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .ui {
+        flex-direction: column-reverse;
+    }
+
+    .container-left, .container-right {
+        width: 100%;
+    }
+}
