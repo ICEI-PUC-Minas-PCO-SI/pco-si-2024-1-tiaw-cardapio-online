@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de usuário</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="header"><span class="title-header"> Cadastro de usuários </span></div>
+    <div class="main">
+      <div class="form-container">
+        <form id="orderForm">
+          <label for="name">Nome</label>
+          <input type="text" id="name" placeholder="Nome" />
+
+          <label for="celular">Celular</label>
+          <input
+            type="text"
+            id="celular"
+            maxlength="15"
+            onkeyup="handlePhone(event)"
+            placeholder="(00)00000-0000"
+          />
+
+          <label for="orderDescription">Email</label>
+          <input type="text" id="email" placeholder="email@email.com" />
+
+          <label for="orderDescription">Senha</label>
+          <input type="password" id="password" placeholder="Senha" onkeyup="checkPasswordMatch()" />
+
+          <label for="orderDescription">Confirmar senha</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirmar senha"
+            onkeyup="checkPasswordMatch()"
+          />
+
+          <input type="checkbox" onclick="myFunction()" />Mostrar senha
+          <p id="passwordMatch"></p>
+          <div class="btn-salvar">
+            <button class="save-button" type="button" id="saveButton">
+              Cadastrar
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="upload">
+        <div class="file-upload-container">
+          <label class="custom-file-input" for="fileInput">
+            <input
+              type="file"
+              id="fileInput"
+              accept="image/*"
+              onchange="previewImage(this)"
+            />
+          </label>
+
+          <!-- Image preview -->
+
+          <img
+            id="previewImage"
+            src="https://via.placeholder.com/150"
+            alt="Preview"
+            style="max-width: 100%; max-height: 200px; border-radius: 50%"
+          />
+          <br />
+          <button style="margin-top: 20px" onclick="removeImage()">
+            Remover imagem
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
