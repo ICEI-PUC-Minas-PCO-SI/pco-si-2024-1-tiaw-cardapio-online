@@ -1,0 +1,31 @@
+[
+    {
+        "id":1,
+        "nomeProduto":"grelhadao",
+        "valor":10,
+        "descricaoProduto":"Um saboroso peito de frango grelhado servido em um pão ciabatta levemente tostado, coberto com folhas frescas de rúcula, fatias suculentas de tomate, queijo feta cremoso e um toque de molho pesto caseiro. Uma explosão de sabores mediterrâneos em cada mordida."
+    },
+    
+    {
+        "id":2,
+        "nomeProduto":"texano",
+        "valor":15,
+        "descricaoProduto":"Um sanduíche robusto e indulgente que combina a suculência da carne de porco desfiada lentamente cozida em molho barbecue defumado, servida em um pão de brioche macio e levemente tostado. Para completar, acrescentamos cebolas caramelizadas, picles crocantes e uma generosa camada de queijo cheddar derretido."
+    },
+    
+    {
+        "id":3,
+        "nomeProduto":"cebolao",
+        "valor":20,
+        "descricaoProduto":"Este é um sanduíche que homenageia a tradição do churrasco americano. Apresentamos fatias suculentas de carne bovina grelhada lentamente em um molho barbecue defumado, servidas em um pão de hambúrguer tostado. Para elevar ainda mais o sabor, adicionamos uma generosa porção de cebolas caramelizadas, que conferem um toque doce e agridoce que combina perfeitamente com a carne suculenta."
+        
+    },
+    
+    {
+        "id":4,
+        "nomeProduto":"costelao",
+        "valor":25,
+        "descricaoProduto":"Prepare-se para uma experiência de sabor intensa com este sanduíche de costela defumada. Apresentamos costelas bovinas desfiadas e tenras, banhadas em um molho barbecue picante e envoltas em um pão brioche macio e levemente tostado. Para adicionar uma crocância irresistível, cobrimos a carne com cebolas fritas crocantes, proporcionando uma explosão de texturas e sabores em cada mordida."
+    }
+    
+    ]
