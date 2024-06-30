@@ -74,5 +74,10 @@
             "imagem": "comida1.jpg",
             "favorito": true
         }
-    ]
+    ],
+    "usuario": [
+        {
+          
+        }
+      ]
 }
