@@ -75,6 +75,11 @@
             "favorito": true
         }
     ],
+    "usuario": [
+        {
+            
+        }
+    ],
     "pedidos": [
         {
             "id": "4e66",
@@ -126,5 +131,5 @@
           "codigoPedido": "12348JKL",
           "imagem": "../images/pastel.jpg"
         }
-      ]
+    ]
 }
