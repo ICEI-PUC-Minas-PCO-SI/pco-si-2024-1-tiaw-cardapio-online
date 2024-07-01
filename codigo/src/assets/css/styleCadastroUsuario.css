@@ -21,12 +21,12 @@ body {
 
 @font-face {
   font-family: "PoppinsMedium";
-  src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("../fonts/static/Poppins-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Noto";
-  src: url("assets/fonts/NotoSans-Regular.ttf") format("truetype");
+  src: url("../fonts/static/NotoSans-Regular.ttf") format("truetype");
 }
 
 .header {

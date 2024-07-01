@@ -1,34 +1,43 @@
-document.getElementById('open_btn').addEventListener('click', function(){
-    document.getElementById('sidebar').classList.toggle('open-sidebar');
-})
+document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("isAdmin") === "true") {
+        const cadastroPedidos = document.getElementById('side_items');
+        const newItem = document.createElement('li');
+        newItem.classList.add('side-item');
+        newItem.innerHTML = `
+            <a href="../assets/pages/cadastroPedidos.html">
+                <i class="fa-solid fa-circle-plus"></i>
+                <span class="item-description">
+                    Cadastro de pedidos
+                </span>
+            </a>
+        `;
+        cadastroPedidos.appendChild(newItem);
+    }
+});
 
+document.getElementById("open_btn").addEventListener("click", function () {
+  document.getElementById("sidebar").classList.toggle("open-sidebar");
+});
 
+function Alimento(alimento) {
+  sessionStorage.setItem("Alimento", alimento);
+}
 
- function Alimento(alimento) {
-     sessionStorage.setItem('Alimento', alimento); 
+function confirmarEscolha() {
+  const Escolhido = sessionStorage.getItem("Alimento");
+  if (Escolhido) {
+    window.location.href = Escolhido + ".html";
+  } else {
+    alert("Por favor, escolha um alimento antes de confirmar.");
   }
+}
 
-   function confirmarEscolha() {
-     const Escolhido = sessionStorage.getItem('Alimento');
-     if (Escolhido) {
-       window.location.href = Escolhido + '.html';
-     } else {
-       alert('Por favor, escolha um alimento antes de confirmar.');
-     }
-   }
+/*PARTE DO CARROSSEL*/
 
-  
-
-
-/*PARTE DO CARROSSEL*/ 
-
-
-fetch('db.json')
-.then(resposta => 
-    resposta.json()
-)
-.then(data => {
-  console.log (data)
+fetch("db.json")
+  .then((resposta) => resposta.json())
+  .then((data) => {
+    console.log(data);
     let str = `
     <div class="carrossel">
             <div class="carrosseis">
@@ -52,15 +61,13 @@ fetch('db.json')
                 <label class="manual-btn" for="radio3"></label>
             </div>
         </div>`;
-    document.getElementById('carros').innerHTML = str;
-});
+    document.getElementById("carros").innerHTML = str;
+  });
 
-fetch('db.json')
-.then(resposta => 
-    resposta.json()
-)
-.then(data => {
-  console.log (data)
+fetch("db.json")
+  .then((resposta) => resposta.json())
+  .then((data) => {
+    console.log(data);
     let str = `
     <div class="carrossel">
             <div class="carrosseis">
@@ -84,16 +91,13 @@ fetch('db.json')
                 <label class="manual-btn" for="radio3"></label>
             </div>
         </div>`;
-    document.getElementById('pizzas').innerHTML = str;
-});
+    document.getElementById("pizzas").innerHTML = str;
+  });
 
-
-fetch('db.json')
-.then(resposta => 
-    resposta.json()
-)
-.then(data => {
-  console.log (data)
+fetch("db.json")
+  .then((resposta) => resposta.json())
+  .then((data) => {
+    console.log(data);
     let str = `
     <div class="carrossel">
             <div class="carrosseis">
@@ -117,15 +121,13 @@ fetch('db.json')
                 <label class="manual-btn" for="radio3"></label>
             </div>
         </div>`;
-    document.getElementById('massas').innerHTML = str;
-});
+    document.getElementById("massas").innerHTML = str;
+  });
 
-fetch('db.json')
-.then(resposta => 
-    resposta.json()
-)
-.then(data => {
-  console.log (data)
+fetch("db.json")
+  .then((resposta) => resposta.json())
+  .then((data) => {
+    console.log(data);
     let str = `
     <div class="carrossel">
             <div class="carrosseis">
@@ -149,16 +151,13 @@ fetch('db.json')
                 <label class="manual-btn" for="radio3"></label>
             </div>
         </div>`;
-    document.getElementById('sandu').innerHTML = str;
-});
+    document.getElementById("sandu").innerHTML = str;
+  });
 
-
-fetch('db.json')
-.then(resposta => 
-    resposta.json()
-)
-.then(data => {
-  console.log (data)
+fetch("db.json")
+  .then((resposta) => resposta.json())
+  .then((data) => {
+    console.log(data);
     let str = `
     <div class="carrossel">
             <div class="carrosseis">
@@ -182,14 +181,12 @@ fetch('db.json')
                 <label class="manual-btn" for="radio3"></label>
             </div>
         </div>`;
-    document.getElementById('frango').innerHTML = str;
-});
-fetch('db.json')
-.then(resposta => 
-    resposta.json()
-)
-.then(data => {
-  console.log (data)
+    document.getElementById("frango").innerHTML = str;
+  });
+fetch("db.json")
+  .then((resposta) => resposta.json())
+  .then((data) => {
+    console.log(data);
     let str = `
     <div class="carrossel">
             <div class="carrosseis">
@@ -213,20 +210,9 @@ fetch('db.json')
                 <label class="manual-btn" for="radio3"></label>
             </div>
         </div>`;
-    document.getElementById('fritas').innerHTML = str;
-});
+    document.getElementById("fritas").innerHTML = str;
+  });
 
-function redirectLogin(){   
-    window.location.href = '/codigo/src/assets/pages/login.html';
+function redirectLogin() {
+  window.location.href = "/codigo/src/assets/pages/login.html";
 }
-
-
-
-
-
-
-
-
-
-
-
