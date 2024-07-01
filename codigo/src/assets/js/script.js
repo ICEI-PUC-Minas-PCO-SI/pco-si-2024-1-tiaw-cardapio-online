@@ -12,6 +12,7 @@ document.getElementById("loginForm").addEventListener("submit", function (e) {
       if (user) {
         localStorage.setItem("userData", JSON.stringify(user));
         isUserAdmin(user);
+        localStorage.setItem("loggedUser", JSON.stringify(user));
 
         window.location.href = "../index.html";
       } else {

@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const nome = document.getElementById("name").value;
     const celular = document.getElementById("celular").value;
     const email = document.getElementById("email").value;
+    const endereco = document.getElementById("endereco").value;
     const senha = document.getElementById("password").value;
     const confirmarSenha = document.getElementById("confirmPassword").value;
     const fileInput = document.getElementById("fileInput");
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
           nome: nome,
           celular: celular,
           email: email,
+          endereco: endereco,
           senha: senha,
           image: imageBase64
         };
@@ -56,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function() {
         nome: nome,
         celular: celular,
         email: email,
+        endereco: endereco,
         senha: senha,
         image: null
       };
