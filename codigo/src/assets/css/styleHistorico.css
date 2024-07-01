@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url("../images/bg2.png");
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: gradient(to right, #ffffff, #ffcf86);
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto";
+  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  margin-top: 70px;
+  @media (min-width: 996px) {
+    margin-left: 7%;
+  }
+  justify-content: flex-start;
+}
+
+.header {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  padding-top: 40px;
+  font-family: PoppinsMedium;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 14px;
+  overflow: hidden;
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  transition: max-width 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 20px;
+  flex: 1;
+  @media (max-width: 996px) {
+    background-color: white;
+  }
+}
+
+.card-name-pedido {
+  font-size: 1.1em;
+  margin: 0 0 10px;
+  color: #333;
+  font-family: PoppinsMedium;
+}
+
+.card-title {
+  font-size: 1.3em;
+  margin-bottom: 6px;
+  margin-top: 0px;
+  font-family: PoppinsMedium;
+}
+
+.card-text {
+  margin-bottom: 6px;
+  color: #555;
+  font-size: 0.95em;
+  margin-top: 2px;
+  font-family: PoppinsMedium;
+}
+
+.card-text small {
+  color: #999;
+  font-family: PoppinsMedium;
+}
+
+/* Responsividade */
+@media (min-width: 996px) {
+  .card {
+    flex-direction: row;
+    max-width: 35%;
+  }
+
+  .card img {
+    width: 200px;
+    height: auto;
+  }
+}

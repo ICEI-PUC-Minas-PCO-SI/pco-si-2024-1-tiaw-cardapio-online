@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="\codigo\src\assets\css\style.css">
-    <link rel="stylesheet" href="\codigo\src\assets\css\styleCarrinho.css">
+    <link rel="stylesheet" href="../css/style.alimentos.css">
+    <link rel="stylesheet" href="../css/styleCarrinho.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Acme:wght@400&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -19,24 +19,33 @@
     <nav id="sidebar">
         <div id="sidebar_content">
             <div id="user">
-                <img src="\codigo\src\assets\images\logofod.jpg" id="user_avatar" alt="Avatar">
+                <img src="/codigo/src/assets/images/logofod.jpg" id="user_avatar" alt="Avatar">
                 <p class="user_infos">
                     <span class="item-description">
                     </span>
                 </p>
             </div>
-
+        
             <ul id="side_items">
-                <li class="side-item">
-                    <a href="\codigo\src\assets\index.html">
+                <li class="side-item active">
+                    <a href="../index.html">
                         <i class="fa-solid fa-house"></i>
                         <span class="item-description">
                             Home
                         </span>
                     </a>
                 </li>
-
-
+    
+                <li class="side-item">
+                    <a href="#">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">
+                            Perfil
+                        </span>
+                    </a>
+                </li>
+            
+           
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-clipboard"></i>
@@ -45,38 +54,38 @@
                         </span>
                     </a>
                 </li>
-
-
-                <li class="side-item active">
-                    <a href="\codigo\src\assets\pages\carrinho.html">
+            
+            
+                <li class="side-item">
+                    <a href="../assets/pages/carrinho.html">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="item-description" id="partCarrinho">
+                        <span class="item-description">
                             Carrinho de compras
                         </span>
                     </a>
                 </li>
-
-
+            
+            
                 <li class="side-item">
-                    <a href="#">
+                    <a href="../historicoPedidos.html">
                         <i class="fa-solid fa-clock"></i>
                         <span class="item-description">
                             Históricos de pedidos
                         </span>
                     </a>
                 </li>
-
-
+            
+        
                 <li class="side-item">
-                    <a href="#">
+                    <a href="../assets/pages/favoritos.html">
                         <i class="fa-solid fa-heart"></i>
                         <span class="item-description">
                             Favoritos
                         </span>
                     </a>
                 </li>
-
-
+            
+            
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-comment"></i>
@@ -85,8 +94,8 @@
                         </span>
                     </a>
                 </li>
-
-
+            
+            
                 <li class="side-item">
                     <a href="#">
                         <i class="fa-solid fa-phone"></i>
@@ -95,17 +104,17 @@
                         </span>
                     </a>
                 </li>
-
-                <button id="open_btn">
-                    <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
-                </button>
+            
+            <button id="open_btn">
+                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+            </button>
         </div>
-
+       
         <div id="perfil">
-            <button id="perfil_btn">
-                <i class="fa-solid fa-user"></i>
+            <button id="perfil_btn" type="button" style="cursor: pointer;" (onclick)="window.location.href = '/codigo/src/assets/pages/login.html'">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
                 <span class="item_description">
-                    Perfil
+                    Sair
                 </span>
             </button>
         </div>
@@ -127,7 +136,7 @@
                                 <div class="descri">Descrição do Produto</div>
                                 <div class="quantity-adjuster">
                                     <div class="qty">
-                                        <img class="minus-icon" src="\codigo\src\assets\images\minus.svg" />
+                                        <img class="minus-icon" src="../images/minus.svg" />
                                         <div class="quantity-value">1</div>
                                         <img class="plus-icon" src="\codigo\src\assets\images\sandu11.jpgplus.svg" />
                                     </div>
@@ -155,7 +164,7 @@
                 </div>
                 <div class="separator"></div>
                 <div class="add-payment-method">
-                    <img src="\codigo\src\assets\images\plus2.svg" />
+                    <img src="../images/plus2.svg" />
                     <a href="\codigo\src\assets\pages\cartao.html">
                         <div class="button-add-payment-method">
                             <div class="addButonMethod">Adicionar Metodo de pagamento</div>
@@ -183,8 +192,9 @@
             </button>
         </div>
     </div>
-    <script src="\codigo\src\assets\js\script.js"></script>
-    <script src="\codigo\src\assets\js\scriptCarrinho.js"></script>
+    <!-- <script src="../js/script.js"></script> -->
+    <script src="../js/scriptCarrinho.js"></script>
+    <script src="../js/script.aliementos.js"></script>
 </body>
 
 <!-- template-headerPrice -->

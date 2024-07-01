@@ -1,0 +1,122 @@
+{
+"Carrosssel1": [
+        {
+            "id": "1",
+            "img": "/codigo/src/assets/images/pizza-gostosa-.avif",
+            "descricao": "Imagem de pizza 1",
+            "classificacao": "Pizza "
+        },
+        {
+            "id": "2",
+            "img": "/codigo/src/assets/images/images (4).jpeg",
+            "descricao": "Imagem de pizza 2",
+            "classificacao": "Pizza "
+        },
+        {
+            "id": "3",
+            "img": "/codigo/src/assets/images/image 7.png",
+            "descricao": "Imagem de pizza 3",
+            "classificacao": "Pizza "
+        }
+    ],
+    "Carrosssel2": [
+        {
+            "id": "6",
+            "img": "/codigo/src/assets/images/Beef Burger.svg",
+            "descricao": "Imagem de Hambúrguer 1",
+            "classificacao": "Hambúrguer"
+        },
+        {
+            "id": "7",
+            "img": "/codigo/src/assets/images/Chicken Burger.svg",
+            "descricao": "Imagem de Hambúrguer 2",
+            "classificacao": "Hambúrguer "
+        },
+        {
+            "id": "8",
+            "img": "/codigo/src/assets/images/Cheese Burger.svg",
+            "descricao": "Imagem de Hambúrguer 3",
+            "Gênero": "Hambúrguer"
+        }
+    ],
+    "Carrosssel3": [
+        {
+            "id": "11",
+            "img": "/assets/imgs/baguette.avif",
+            "descricao": "Imagem de Sanduíche 1",
+            "classificacao": "Sanduíche"
+        },
+        {
+            "id": "12",
+            "img": "/assets/imgs/receita-sanduiche-natural.jpeg",
+            "descricao": "Imagem de Sanduíche 2",
+            "classificacao": "Sanduíche"
+        },
+        {
+            "id": "13",
+            "img": "/assets/imgs/depositphotos..jpg",
+            "descricao": "Imagem de Sanduíche 3",
+            "Gênero": "Sanduíche"
+        }
+    ],
+    "Carrosssel4": [
+        {
+            "id": "16",
+            "img": "/assets/imgs/pngtree-fried-chicken-sticks-w-picture-image_3186995.jpg",
+            "descricao": "Imagem de Frango 1",
+            "classificacao": "Frango"
+        },
+        {
+            "id": "17",
+            "img": "/assets/imgs/images.jpeg",
+            "descricao": "Imagem de Frango 2",
+            "classificacao": "Frango"
+        },
+        {
+            "id": "18",
+            "img": "/assets/imgs/images (1).jpeg",
+            "descricao": "Imagem de Frango 3",
+            "Gênero": "Frango"
+        }
+    ],
+    "Carrosssel5": [
+        {
+            "id": "21",
+            "img": "/assets/imgs/images (2).jpeg",
+            "descricao": "Imagem de Massas 1",
+            "classificacao": "Massas"
+        },
+        {
+            "id": "22",
+            "img": "/assets/imgs/pngtree-home.png",
+            "descricao": "Imagem de Massas 2",
+            "classificacao": "Massas"
+        },
+        {
+            "id": "23",
+            "img": "/assets/imgs/pngtree-11469071.png",
+            "descricao": "Imagem de Massas 3",
+            "Gênero": "Massas"
+        }
+    ],
+    "Carrosssel6": [
+        {
+            "id": "26",
+            "img": "/assets/imgs/image 6.svg",
+            "descricao": "Imagem de Massas 1",
+            "classificacao": "fritas"
+        },
+        {
+            "id": "28",
+            "img": "/assets/imgs/pngtree-3d-frenc.png",
+            "descricao": "Imagem de Massas 3",
+            "Gênero": "Fritas"
+        },
+        {
+            "id": "29",
+            "img": "/assets/imgs/image 7.svg",
+            "descricao": "Imagem de Massas 4",
+            "Gênero": "Fritas"
+        }
+    ]
+}
