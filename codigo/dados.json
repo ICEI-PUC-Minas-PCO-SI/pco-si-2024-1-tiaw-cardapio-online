@@ -31,7 +31,7 @@
             "nome": "Hamburguer",
             "descricao": "Hamburguer de carne de picanha, queijo, alface, tomate, maionese",
             "preco": 15,
-            "imagem": "hamburguer.jpg",
+            "imagem": "../images/hamburguer.jpg",
             "favorito": true
         },
         {
@@ -39,7 +39,7 @@
             "nome": "Pizza",
             "descricao": "Pizza de calabresa com catupiry, cebola e azeitona preta",
             "preco": 25,
-            "imagem": "pizza.jpg",
+            "imagem": "../images/pizza.jpg",
             "favorito": true
         },
         {
@@ -47,7 +47,7 @@
             "nome": "Coxinha",
             "descricao": "Coxinha de frango com catupiry",
             "preco": 5,
-            "imagem": "coxinha.jpg",
+            "imagem": "../images/coxinha.jpg",
             "favorito": true
         },
         {
@@ -55,7 +55,7 @@
             "nome": "Pastel",
             "descricao": "Pastel de carne com queijo",
             "preco": 7,
-            "imagem": "pastel.jpg",
+            "imagem": "../images/pastel.jpg",
             "favorito": true
         },
         {
@@ -63,7 +63,7 @@
             "nome": "Strogonoff",
             "descricao": "Strogonoff de frango com batata palha",
             "preco": 19.90,
-            "imagem": "strogonoff2.jpg",
+            "imagem": "../images/strogonoff2.jpg",
             "favorito": true
         },
         {
@@ -71,7 +71,7 @@
             "nome": "Salada",
             "descricao": "salada de alface, tomate e cenoura com molho de mostarda",
             "preco": 19.90,
-            "imagem": "comida1.jpg",
+            "imagem": "../images/comida1.jpg",
             "favorito": true
         }
     ],
