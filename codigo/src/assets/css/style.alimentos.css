@@ -34,6 +34,7 @@
 }
 
 
+
 .alinha{
     display: flex;
 }
@@ -469,6 +470,7 @@ main{
 #sidebar.open-sidebar .item-description{
     width: 150px;
     height: auto;
+    padding-left: 10px;
 }
 
 #sidebar.open-sidebar.side-item a{

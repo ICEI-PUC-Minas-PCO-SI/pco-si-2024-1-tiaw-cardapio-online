@@ -85,6 +85,12 @@ body {
   border-radius: 10px;
 }
 
+.group-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .input-group {
   display: flex;
   flex-direction: column;

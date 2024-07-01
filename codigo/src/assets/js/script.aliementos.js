@@ -216,7 +216,9 @@ fetch('db.json')
     document.getElementById('fritas').innerHTML = str;
 });
 
-
+function redirectLogin(){   
+    window.location.href = '/codigo/src/assets/pages/login.html';
+}
 
 
 
