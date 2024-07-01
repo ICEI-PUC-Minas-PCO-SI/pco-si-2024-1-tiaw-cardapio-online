@@ -1,9 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const form = document.getElementById("orderForm");
-  const saveButton = document.getElementById("saveButton");
-
-  saveButton.addEventListener("click", function(event) {
-    event.preventDefault(); // Evita o comportamento padrão do formulário
+  document.getElementById("orderForm").addEventListener("submit", function (e) {
+    e.preventDefault();// Evita o comportamento padrão do formulário
 
     const nome = document.getElementById("name").value;
     const celular = document.getElementById("celular").value;
@@ -44,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
           return response.json();
         })
         .then(() => {
-          alert("Usuário cadastrado com sucesso!");
+          window.location.href = "../pages/login.html";
         })
         .catch(error => {
           console.error("Erro ao salvar o usuario:", error);
@@ -78,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
         return response.json();
       })
       .then(data => {
-        alert("Usuário cadastrado com sucesso!");
+        window.location.href = "../pages/login.html";
       })
       .catch(error => {
         console.error("Erro ao salvar o usuario:", error);

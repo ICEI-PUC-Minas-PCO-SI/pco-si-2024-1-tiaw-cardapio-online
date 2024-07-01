@@ -77,21 +77,12 @@
   ],
   "usuario": [
     {
-        "id": "1",
-        "nome": "Usuário admin master",
-        "celular": "(99) 99999-99999",
-        "endereco": "Rua do Usuário Admin, 123",
-        "email": "usuarioadmin@admin.com",
-        "senha": "admin123",
-        "image": null
-    },
-    {
-      "id": "2",
-      "nome": "testenome",
-      "celular": "(13) 12313-1232",
-      "endereco": "Rua do teste, 123",
-      "email": "teste@email.com",
-      "senha": "Senha123",
+      "id": "1",
+      "nome": "Usuário admin master",
+      "celular": "(99) 99999-99999",
+      "endereco": "Rua do Usuário Admin, 123",
+      "email": "usuarioadmin@admin.com",
+      "senha": "admin123",
       "image": null
     }
   ],
