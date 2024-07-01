@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="../css/styleCadastroPedidos.css" />
   </head>
   <body>
+    <button
+      type="button"
+      id="viewOrdersButton"
+      class="button-voltar"
+      onclick="window.location.href='../index.html'"
+    >
+      Voltar
+    </button>
     <div class="header">CADASTRO DE PEDIDOS</div>
     <div class="main">
       <div class="form-container">
@@ -41,7 +49,6 @@
             <option value="Frango">Frango</option>
             <option value="Massa">Massa</option>
             <option value="Fritas">Fritas</option>
-
           </select>
           <div class="btn-salvar">
             <button class="save-button" type="button" id="saveButton">
@@ -67,10 +74,12 @@
             id="previewImage"
             src="https://via.placeholder.com/150"
             alt="Preview"
-            style="max-width: 100%; max-height: 200px; border-radius: 10px;"
+            style="max-width: 100%; max-height: 200px; border-radius: 10px"
           />
-          <br>
-          <button style="margin-top:20px;" onclick="removeImage()">Remover imagem</button>
+          <br />
+          <button style="margin-top: 20px" onclick="removeImage()">
+            Remover imagem
+          </button>
         </div>
         <div class="redi-button">
           <button
@@ -82,7 +91,6 @@
           </button>
         </div>
       </div>
-
     </div>
     <script src="../js/scriptCadastroPedidos.js"></script>
   </body>

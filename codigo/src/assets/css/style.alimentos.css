@@ -19,9 +19,9 @@
     display: block;
 }
 .menu{
-    display: flex;
     margin-left: 18rem;
-    margin-top: 19rem;
+    padding-bottom: 9rem;
+    padding-top: 10rem;
 }
 .button{
     display: flex;
@@ -38,6 +38,7 @@
 
 .alinha{
     display: flex;
+    margin-top: 10rem;
 }
 .categorias{
     margin-left: 12rem;
