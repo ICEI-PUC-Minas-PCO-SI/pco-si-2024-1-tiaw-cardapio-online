@@ -10,9 +10,12 @@
     <div class="header"><span class="title-header"> Cadastro de usuários </span></div>
     <div class="main">
       <div class="form-container">
-        <form id="orderForm">
+        <form id="orderForm" >
           <label for="name">Nome</label>
-          <input type="text" id="name" placeholder="Nome" />
+          <input type="text" id="name" placeholder="Nome" required />
+
+          <label for="endereco">Endereço</label>
+          <input type="text" id="endereco" placeholder="Endereço" required />
 
           <label for="celular">Celular</label>
           <input
@@ -24,10 +27,10 @@
           />
 
           <label for="orderDescription">Email</label>
-          <input type="text" id="email" placeholder="email@email.com" />
+          <input type="text" id="email" placeholder="email@email.com" required />
 
           <label for="orderDescription">Senha</label>
-          <input type="password" id="password" placeholder="Senha" onkeyup="checkPasswordMatch()" />
+          <input type="password" id="password" placeholder="Senha" onkeyup="checkPasswordMatch()" required />
 
           <label for="orderDescription">Confirmar senha</label>
           <input
@@ -40,7 +43,7 @@
           <input type="checkbox" onclick="myFunction()" />Mostrar senha
           <p id="passwordMatch"></p>
           <div class="btn-salvar">
-            <button class="save-button" type="button" id="saveButton">
+            <button class="save-button" type="submit" id="saveButton">
               Cadastrar
             </button>
           </div>
