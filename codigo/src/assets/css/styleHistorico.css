@@ -11,14 +11,26 @@ body {
 
 @font-face {
   font-family: "PoppinsMedium";
-  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("../fonts/static/Poppins-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Noto";
-  src: url("../fonts/NotoSans-Regular.ttf") format("truetype");
+  src: url("../fonts/static/NotoSans-Regular.ttf") format("truetype");
 }
 
+
+.redi-button {
+  margin-top: 40px;
+  button{ 
+    background-color: #222222;
+    color: white;
+    padding: 18px 22px;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+  }
+}
 .main {
   display: flex;
   flex-direction: column;

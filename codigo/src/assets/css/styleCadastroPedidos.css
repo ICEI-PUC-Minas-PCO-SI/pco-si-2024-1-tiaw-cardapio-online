@@ -2,7 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px;
-  background-image: url("assets/img/fundo-amarelo.jpg");
+  background-image: url("../images/bg2.png");
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: gradient(to right, #ffffff, #ffcf86);
 }
 
 .main {
@@ -13,12 +17,12 @@ body {
 
 @font-face {
   font-family: "PoppinsMedium";
-  src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("../fonts/static/Poppins-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Noto";
-  src: url("assets/fonts/NotoSans-Regular.ttf") format("truetype");
+  src: url("../fonts/static/NotoSans-Regular.ttf") format("truetype");
 }
 
 .header {
@@ -48,7 +52,7 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 19px;
+  padding: 13px;
   margin-bottom: 35px;
   border-radius: 9px;
   border: 1px solid #ccc;

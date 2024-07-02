@@ -2,7 +2,7 @@
 "Carrosssel1": [
         {
             "id": "1",
-            "img": "/codigo/src/assets/images/pizza-gostosa-.avif",
+            "img": "../images/pizza-gostosa-.avif",
             "descricao": "Imagem de pizza 1",
             "classificacao": "Pizza "
         },
