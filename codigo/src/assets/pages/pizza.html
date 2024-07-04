@@ -1,105 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/codigo/src/assets/css/style.alimentos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/css/style.alimentos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!--ESSA PARTE É A BARRA LATERAL-->
     <nav id="sidebar">
         <div id="sidebar_content">
             <div id="user">
-                <img src="/codigo/src/assets/images/logofod.jpg" id="user_avatar" alt="Avatar">
+                <img src="../../assets/images/logofod.jpg" id="user_avatar" alt="Avatar">
                 <p class="user_infos">
                     <span class="item-description">
                     </span>
                 </p>
             </div>
-        
+
             <ul id="side_items">
                 <li class="side-item active">
-                    <a href="#">
+                    <a href="../index.html">
                         <i class="fa-solid fa-house"></i>
                         <span class="item-description">
                             Home
                         </span>
                     </a>
                 </li>
-            
-           
+
                 <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-clipboard"></i>
+                    <a href="../../assets/pages/perfil.html">
+                        <i class="fa-solid fa-user"></i>
                         <span class="item-description">
-                            Cardápio
+                            Perfil
                         </span>
                     </a>
                 </li>
-            
-            
+
+
+
                 <li class="side-item">
-                    <a href="#">
+                    <a href="carrinho.html">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span class="item-description">
                             Carrinho de compras
                         </span>
                     </a>
                 </li>
-            
-            
+
+
                 <li class="side-item">
-                    <a href="#">
+                    <a href="../../assets/pages/historicoPedidos.html">
                         <i class="fa-solid fa-clock"></i>
                         <span class="item-description">
                             Históricos de pedidos
                         </span>
                     </a>
                 </li>
-            
-        
+
+
                 <li class="side-item">
-                    <a href="#">
+                    <a href="/codigo/src/assets/pages/favoritos.html">
                         <i class="fa-solid fa-heart"></i>
                         <span class="item-description">
                             Favoritos
                         </span>
                     </a>
                 </li>
-            
-            
+
+
                 <li class="side-item">
-                    <a href="#">
+                    <a href="/codigo/src/assets/pages/feedback.html">
                         <i class="fa-solid fa-comment"></i>
                         <span class="item-description">
                             Feedback
                         </span>
                     </a>
                 </li>
-            
-            
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-phone"></i>
-                        <span class="item-description">
-                            Contato
-                        </span>
-                    </a>
-                </li>
-            
-            <button id="open_btn">
-                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
-            </button>
+
+
+                <button id="open_btn">
+                    <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+                </button>
         </div>
-       
+
         <div id="perfil">
-            <button id="perfil_btn">
-                <i class="fa-solid fa-user"></i>
-                <span class="item_description">
-                    Perfil
-                </span>
+            <button id="perfil_btn" type="button" style="cursor: pointer;">
+                <a href="/codigo/src/assets/pages/login.html">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <span class="item_description">
+                        Sair
+                    </span>
+                </a>
             </button>
         </div>
     </nav>
@@ -111,35 +108,36 @@
             </div>
         </div>
         <div id="pizzas">
-        <div class="carrossel">
-            <div class="carrosseis">
-                <input type="radio" name="radio-btn" id="radio1">
-                <input type="radio" name="radio-btn" id="radio2">
-                <input type="radio" name="radio-btn" id="radio3">
-    
-                <div class="passar first">
-                    <img src="/codigo/src/assets/images/pizza-gostosa-.avif" alt="">
+            <div class="carrossel">
+                <div class="carrosseis">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+
+                    <div class="passar first">
+                        <img src="../../assets/images/pizza-gostosa-.avif" alt="">
+                    </div>
+                    <div class="passar">
+                        <img src="../../assets/images/images (4).jpeg" alt="">
+                    </div>
+                    <div class="passar">
+                        <img src="../../assets/images/image 7.png" alt="">
+                    </div>
                 </div>
-                <div class="passar">
-                    <img src="/codigo/src/assets/images/images (4).jpeg" alt="">
+                <div class="nav-bolinha">
+                    <label class="manual-btn" for="radio1"></label>
+                    <label class="manual-btn" for="radio2"></label>
+                    <label class="manual-btn" for="radio3"></label>
                 </div>
-                <div class="passar">
-                    <img src="/codigo/src/assets/images/image 7.png" alt="">
-                </div>
-            </div>
-            <div class="nav-bolinha">
-                <label class="manual-btn" for="radio1"></label>
-                <label class="manual-btn" for="radio2"></label>
-                <label class="manual-btn" for="radio3"></label>
             </div>
         </div>
-    </div>
         <div class="card-alimentos">
             <div class="card">
-                <img src="/codigo/src/assets/images/imagespizza1.jpeg" alt="">
+                <img src="../../assets/images/imagespizza1.jpeg" alt="">
                 <div class="card-content">
                     <h3>Pizza calabresa</h3>
-                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate, cebola roxa e calabresa picada.</p>
+                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate,
+                        cebola roxa e calabresa picada.</p>
                     <h4>R$60,00</h4>
                     <button class="comprar"><!--ESSE "a" SERÁ ONDE VAI COLOCAR APÁGINA DO GABRIEL-->
                         <a href="#" class="btn">Adicionar ao carrinho</a>
@@ -147,201 +145,213 @@
                     <div class="favorite">
                         <!--Esse "a" VAI SER A PARTE DE FAVORITAR QUE É A PARTE DA MARCELA-->
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="traco"></div>
             <div class="card">
-                <img src="/codigo/src/assets/images/pizza-gostosa-.avif" alt="">
+                <img src="../../assets/images/pizza-gostosa-.avif" alt="">
                 <div class="card-content">
                     <h3>Pizza Bacon</h3>
-                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate, cebola roxa e bacons tostados.</p>
+                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate,
+                        cebola roxa e bacons tostados.</p>
                     <h4>R$65,99</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="traco"></div>
             <div class="card">
-                <img src="/codigo/src/assets/images/images (4).jpeg" alt="">
+                <img src="../../assets/images/images (4).jpeg" alt="">
                 <div class="card-content">
                     <h3>Pizza Azeitona</h3>
-                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate, cebola roxa, tomates cereja e azeitona.</p>
+                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate,
+                        cebola roxa, tomates cereja e azeitona.</p>
                     <h4>R$55,99</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="traco"></div>
             <div class="card">
-                <img src="/codigo/src/assets/images/images (5).jpeg" alt="">
+                <img src="../../assets/images/images (5).jpeg" alt="">
                 <div class="card-content">
                     <h3>Pizza salame</h3>
-                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate, salame e cebola branca.</p>
+                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate,
+                        salame e cebola branca.</p>
                     <h4>R$60,00</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
+
             <div class="card">
-                <img src="/codigo/src/assets/images/image 7.png" alt="">
+                <img src="../../assets/images/image 7.png" alt="">
                 <div class="card-content">
                     <h3>Pizza portuguesa</h3>
-                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate, cebola roxa, tomates cereja e azeitona.</p>
+                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho de tomate,
+                        cebola roxa, tomates cereja e azeitona.</p>
                     <h4>R$79,99</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="traco"></div>
             <div class="card">
-                <img src="/codigo/src/assets/images/uma-pizza-avif" alt="">
+                <img src="../../assets/images/pizza-molho-branco.webp" alt="">
                 <div class="card-content">
                     <h3>Pizza molho branco</h3>
-                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho branco, cebola, tomate e bacon tostado.</p>
+                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, molho branco, cebola,
+                        tomate e bacon tostado.</p>
                     <h4>R$60,00</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="traco"></div>
             <div class="card">
-                <img src="/codigo/src/assets/images/uma-pizza-avif" alt="">
+                <img src="../../assets/images/pizza-3-queijos.avif" alt="">
                 <div class="card-content">
                     <h3>Pizza três queijos</h3>
-                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, parmessão e cheedar, molho de tomate, e cebola branca.</p>
+                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de queijo mussarela, parmessão e cheedar,
+                        molho de tomate, e cebola branca.</p>
                     <h4>R$46,99</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="traco"></div>
             <div class="card">
-                <img src="/codigo/src/assets/images/p4.jpg" alt="">
+                <img src="../../assets/images/p4.jpg" alt="">
                 <div class="card-content">
                     <h3>Pizza Infantil</h3>
-                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de molho de tomate, queijo mussarela, muito frango desfiado e requeijão.</p>
+                    <p>Pizza de tamanho grande médio ou pequeno, com recheio de molho de tomate, queijo mussarela, muito
+                        frango desfiado e requeijão.</p>
                     <h4>R$66,99</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
+
             <div class="card">
-                <img src="/codigo/src/assets/images/vegetariana.jpg" alt="">
+                <img src="../../assets/images/vegetariana.jpg" alt="">
                 <div class="card-content">
                     <h3>Pizza vegetariana</h3>
-                    <p>Pizza de tamanho pequeno, médio ou grande, feita com massa vegetariana e recheada com tomate, pimentão, cebola.</p>
+                    <p>Pizza de tamanho pequeno, médio ou grande, feita com massa vegetariana e recheada com tomate,
+                        pimentão, cebola.</p>
                     <h4>R$45,00</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="traco"></div>
             <div class="card">
-                <img src="/codigo/src/assets/images/bf83b5f2c32514c6f5faee69ade6ed44.jpg" alt="">
+                <img src="../../assets/images/bf83b5f2c32514c6f5faee69ade6ed44.jpg" alt="">
                 <div class="card-content">
                     <h3>Pizza doce</h3>
-                    <p>Pizza grande, média ou pequena, feita com brigadeiro preto, coco ralado e brigadeiro branco. Com borda recheada de doce de leite</p>
+                    <p>Pizza grande, média ou pequena, feita com brigadeiro preto, coco ralado e brigadeiro branco. Com
+                        borda recheada de doce de leite</p>
                     <h4>R$65,99</h4>
                     <button class="comprar">
-                    <a href="#" class="btn">Adicionar ao carrinho</a>
-                </button>
-                <div class="favorite">
-                    <a href="#">
-                <i class="fa-solid fa-heart"></i>
-            </a>
-            </div>
+                        <a href="#" class="btn">Adicionar ao carrinho</a>
+                    </button>
+                    <div class="favorite">
+                        <a href="#">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="traco"></div>
             <div class="card">
-                <img src="/codigo/src/assets/images/images (7).jpeg" alt="">
+                <img src="../../assets/images/images (7).jpeg" alt="">
                 <div class="card-content">
                     <h3>Pizza doce morango</h3>
-                    <p>Pizza grande, média ou pequena, feita com brigadeiro preto, morangos frescos picados. Com borda recheada de doce de leite</p>
+                    <p>Pizza grande, média ou pequena, feita com brigadeiro preto, morangos frescos picados. Com borda
+                        recheada de doce de leite</p>
                     <h4>R$45,99</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="traco"></div>
             <div class="card">
-                <img src="/codigo/src/assets/images/pizza-de-prestigio.jpg" alt="">
+                <img src="../../assets/images/pizza-de-prestigio.jpg" alt="">
                 <div class="card-content">
                     <h3>Pizza doce sem lactose</h3>
-                    <p>Pizza grande, média ou pequena, feita com brigadeiro preto, kinder e granulados. Com borda recheada de doce de leite.</p>
+                    <p>Pizza grande, média ou pequena, feita com brigadeiro preto, kinder e granulados. Com borda
+                        recheada de doce de leite.</p>
                     <h4>R$35,99</h4>
                     <button class="comprar">
                         <a href="#" class="btn">Adicionar ao carrinho</a>
                     </button>
                     <div class="favorite">
                         <a href="#">
-                    <i class="fa-solid fa-heart"></i>
-                </a>
-                </div>
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-            
+
         </div>
     </aside>
-    <script src="/codigo/src/assets/js/script.aliementos.js"></script>
+    <script src="../../assets/js/script.aliementos.js"></script>
 </body>
+
 </html>

@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
     addEventInMakePayment();
-    addEventInRadioButton();
     showProductsInCart();
     showCard();
 });
@@ -33,6 +32,7 @@ function addProduct(productName, productPrice, productDescription, imageUrl) {
     addEventQuantityProduct(minusBtn, plusBtn, quantityValue);
 
     const removeBtn = newProduct.querySelector('.remover');
+
     removeProductEvent(removeBtn, newProduct);
 
     // Append the new product to the container
@@ -52,6 +52,8 @@ function addCard(numberCard, expirationDate) {
 
     newCard.querySelector(".div").textContent = numberCard;
     newCard.querySelector(".expires-112020").textContent = "Expira: " + expirationDate;
+
+    addEventInRadioButton(newCard.querySelector("input.selected-area"));
 
     cardContainer.appendChild(newCard);
     removeCard(newCard.querySelector(".removeMethod"), newCard);
@@ -81,8 +83,25 @@ function removeCard(removeBtn, cardElement) {
 
 function removeProductEvent(removeBtn, productElement) {
     removeBtn.addEventListener('click', function () {
+        const allProduct = document.querySelectorAll(".productElement:not(#templateProduct)");
+        const allProductsArray = Array.from(allProduct);
+        const index = allProductsArray.indexOf(productElement);
+
+        const productsInCart = localStorage.getItem('productsInCart');
+
+        if (productsInCart) {
+            let allProductsArray = JSON.parse(productsInCart);
+            if (index >= 0 && index < allProductsArray.length) {
+                allProductsArray.splice(index, 1);
+                const updatedCardData = JSON.stringify(allProductsArray);
+                localStorage.setItem('productsInCart', updatedCardData);
+            } else {
+                console.log("Índice inválido");
+            }
+        }
+
         productElement.remove();
-        updateOrderSummary(); // Update order summary after removal
+        updateOrderSummary();
     });
 }
 
@@ -204,19 +223,16 @@ function addEventInMakePayment() {
     });
 }
 
-function addEventInRadioButton() {
-    const radioButtons = document.querySelectorAll('input.selected-area');
-
-    radioButtons.forEach(radio => {
-        radio.addEventListener('change', function () {
-            if (this.checked) {
-                radioButtons.forEach(otherRadio => {
-                    if (otherRadio !== this) {
-                        otherRadio.checked = false;
-                    }
-                });
-            }
-        });
+function addEventInRadioButton(radio) {
+    radio.addEventListener('change', function () {
+        const radioButtons = document.querySelectorAll("input.selected-area");
+        if (this.checked) {
+            radioButtons.forEach(otherRadio => {
+                if (otherRadio !== this) {
+                    otherRadio.checked = false;
+                }
+            });
+        }
     });
 }
 

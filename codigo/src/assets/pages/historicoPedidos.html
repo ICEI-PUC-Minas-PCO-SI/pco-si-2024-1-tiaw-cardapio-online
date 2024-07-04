@@ -1,17 +1,129 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Histórico de pedidos</title>
+    <!-- <link rel="stylesheet" href="../css/style.alimentos.css"> -->
     <link rel="stylesheet" href="../css/styleHistorico.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="../css/style.alimentos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="/codigo/src/assets/images/logofod.jpg" id="user_avatar" alt="Avatar">
+                <p class="user_infos">
+                    <span class="item-description">
+                    </span>
+                </p>
+            </div>
+
+            <ul id="side_items">
+                <li class="side-item active">
+                    <a href="/codigo/src/assets/index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="item-description">
+                            Home
+                        </span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="/codigo/src/assets/pages/perfil.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">
+                            Perfil
+                        </span>
+                    </a>
+                </li>
+
+
+
+                <li class="side-item">
+                    <a href="/codigo/src/assets/pages/carrinho.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="item-description">
+                            Carrinho de compras
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="/codigo/src/assets/pages/historicoPedidos.html">
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="item-description">
+                            Históricos de pedidos
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="/codigo/src/assets/pages/favoritos.html">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="item-description">
+                            Favoritos
+                        </span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="/codigo/src/assets/pages/cartao.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span class="item-description">
+                            Meus cartões
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="/codigo/src/assets/pages/feedback.html">
+                        <i class="fa-solid fa-comment"></i>
+                        <span class="item-description">
+                            Feedback
+                        </span>
+                    </a>
+                </li>
+
+
+                <button id="open_btn">
+                    <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+                </button>
+        </div>
+
+        <div id="perfil">
+            <button id="perfil_btn" type="button" style="cursor: pointer;">
+                <a href="/codigo/src/assets/pages/login.html">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <span class="item_description">
+                        Sair
+                    </span>
+                </a>
+            </button>
+        </div>
+    </nav>
+
     <div class="header">
-      <span class="title-header">Histórico de pedidos</span>
+        <span class="title-header">Histórico de pedidos</span>
     </div>
     <div class="main" id="container-historico">
+
+    </div>
+    <div class="redi-button">
+        <button type="button" id="viewOrdersButton" onclick="window.location.href='../index.html'">
+            Voltar
+        </button>
     </div>
     <script src="../js/scriptHistorico.js"></script>
-  </body>
+    <script src="../js/script.aliementos.js"></script>
+</body>
+
 </html>

@@ -74,6 +74,8 @@ body {
   color: #fff;
 }
 
+
+
 .form-header h1::after {
   content: "";
   display: block;
@@ -83,6 +85,12 @@ body {
   margin: 0 auto;
   position: absolute;
   border-radius: 10px;
+}
+
+.group-buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .input-group {

@@ -1,89 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CADASTRO DE PEDIDOS</title>
-    <link rel="stylesheet" href="../css/styleCadastroPedidos.css" />
-  </head>
-  <body>
-    <div class="header">CADASTRO DE PEDIDOS</div>
-    <div class="main">
-      <div class="form-container">
-        <form id="orderForm">
-          <label for="orderName">Nome do pedido:</label>
-          <input
-            type="text"
-            id="orderName"
-            placeholder="Digite o nome do pedido"
-          />
 
-          <label for="orderValue">Valor:</label>
-          <input
-            type="text"
-            id="orderValue"
-            onKeyUp="mascaraMoeda(this, event)"
-            placeholder="Digite o valor..."
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CADASTRO DE PEDIDOS</title>
+  <link rel="stylesheet" href="../css/styleCadastroPedidos.css" />
+</head>
 
-          <label for="orderDescription">Descrição do pedido:</label>
-          <textarea
-            id="orderDescription"
-            placeholder="Digite a descrição do pedido"
-          ></textarea>
+<body>
+  <div class="redi-button">
+    <button type="button" id="viewOrdersButton" onclick="window.location.href='../index.html'">
+      Voltar
+    </button>
+  </div>
+  <div class="header">CADASTRO DE PEDIDOS</div>
+  <div class="main">
+    <div class="form-container">
+      <form id="orderForm">
+        <label for="orderName">Nome do pedido:</label>
+        <input type="text" id="orderName" placeholder="Digite o nome do pedido" />
 
-          <label for="foodType">Categoria de pedidos:</label>
-          <select id="foodType">
-            <option value="Selecione">Selecione</option>
-            <option value="Pizza">Pizza</option>
-            <option value="Burger">Burguer</option>
-            <option value="Sanduíche">Sanduíche</option>
-            <option value="Frango">Frango</option>
-            <option value="Massa">Massa</option>
-            <option value="Fritas">Fritas</option>
+        <label for="orderValue">Valor:</label>
+        <input type="text" id="orderValue" onKeyUp="mascaraMoeda(this, event)" placeholder="Digite o valor..." />
 
-          </select>
-          <div class="btn-salvar">
-            <button class="save-button" type="button" id="saveButton">
-              Salvar pedido
-            </button>
-          </div>
-        </form>
-      </div>
-      <div class="upload">
-        <div class="file-upload-container">
-          <label class="custom-file-input" for="fileInput">
-            <input
-              type="file"
-              id="fileInput"
-              accept="image/*"
-              onchange="previewImage(this)"
-            />
-          </label>
+        <label for="orderDescription">Descrição do pedido:</label>
+        <textarea id="orderDescription" placeholder="Digite a descrição do pedido"></textarea>
 
-          <!-- Image preview -->
-
-          <img
-            id="previewImage"
-            src="https://via.placeholder.com/150"
-            alt="Preview"
-            style="max-width: 100%; max-height: 200px; border-radius: 10px;"
-          />
-          <br>
-          <button style="margin-top:20px;" onclick="removeImage()">Remover imagem</button>
-        </div>
-        <div class="redi-button">
-          <button
-            type="button"
-            id="viewOrdersButton"
-            onclick="window.location.href='../pages/pedidosListaAdm.html'"
-          >
-            Ver lista de pedidos
+        <label for="foodType">Categoria de pedidos:</label>
+        <select id="foodType">
+          <option value="Selecione">Selecione</option>
+          <option value="Pizza">Pizza</option>
+          <option value="Burger">Burguer</option>
+          <option value="Sanduíche">Sanduíche</option>
+          <option value="Frango">Frango</option>
+          <option value="Massa">Massa</option>
+          <option value="Fritas">Fritas</option>
+        </select>
+        <div class="btn-salvar">
+          <button class="save-button" type="button" id="saveButton">
+            Salvar pedido
           </button>
         </div>
-      </div>
-
+      </form>
     </div>
-    <script src="../js/scriptCadastroPedidos.js"></script>
-  </body>
+    <div class="upload">
+      <div class="file-upload-container">
+        <label class="custom-file-input" for="fileInput">
+          <input type="file" id="fileInput" accept="image/*" onchange="previewImage(this)" />
+        </label>
+
+        <!-- Image preview -->
+
+        <img id="previewImage" src="https://via.placeholder.com/150" alt="Preview"
+          style="max-width: 100%; max-height: 200px; border-radius: 10px" />
+        <br />
+        <button style="margin-top: 20px" onclick="removeImage()">
+          Remover imagem
+        </button>
+      </div>
+      <div class="redi-button">
+        <button type="button" id="viewOrdersButton" onclick="window.location.href='../pages/pedidosListaAdm.html'">
+          Ver lista de pedidos
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="../js/scriptCadastroPedidos.js"></script>
+</body>
+
 </html>

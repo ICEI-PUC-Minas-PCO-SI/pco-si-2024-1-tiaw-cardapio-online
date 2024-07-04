@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="\codigo\src\assets\css\style.css">
-    <link rel="stylesheet" href="\codigo\src\assets\css\styleCarrinho.css">
+    <link rel="stylesheet" href="../css/style.alimentos.css">
+    <link rel="stylesheet" href="../css/styleCarrinho.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=ABeeZee:wght@400&display=swap" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Acme:wght@400&display=swap" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -19,7 +19,7 @@
     <nav id="sidebar">
         <div id="sidebar_content">
             <div id="user">
-                <img src="\codigo\src\assets\images\logofod.jpg" id="user_avatar" alt="Avatar">
+                <img src="../../assets/images/logofod.jpg" id="user_avatar" alt="Avatar">
                 <p class="user_infos">
                     <span class="item-description">
                     </span>
@@ -27,8 +27,8 @@
             </div>
 
             <ul id="side_items">
-                <li class="side-item">
-                    <a href="\codigo\src\assets\index.html">
+                <li class="side-item active">
+                    <a href="../index.html">
                         <i class="fa-solid fa-house"></i>
                         <span class="item-description">
                             Home
@@ -36,21 +36,21 @@
                     </a>
                 </li>
 
-
                 <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-clipboard"></i>
+                    <a href="../../assets/pages/perfil.html">
+                        <i class="fa-solid fa-user"></i>
                         <span class="item-description">
-                            Cardápio
+                            Perfil
                         </span>
                     </a>
                 </li>
 
 
-                <li class="side-item active">
-                    <a href="\codigo\src\assets\pages\carrinho.html">
+
+                <li class="side-item">
+                    <a href="carrinho.html">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="item-description" id="partCarrinho">
+                        <span class="item-description">
                             Carrinho de compras
                         </span>
                     </a>
@@ -58,7 +58,7 @@
 
 
                 <li class="side-item">
-                    <a href="#">
+                    <a href="../../assets/pages/historicoPedidos.html">
                         <i class="fa-solid fa-clock"></i>
                         <span class="item-description">
                             Históricos de pedidos
@@ -68,7 +68,7 @@
 
 
                 <li class="side-item">
-                    <a href="#">
+                    <a href="/codigo/src/assets/pages/favoritos.html">
                         <i class="fa-solid fa-heart"></i>
                         <span class="item-description">
                             Favoritos
@@ -78,7 +78,7 @@
 
 
                 <li class="side-item">
-                    <a href="#">
+                    <a href="/codigo/src/assets/pages/feedback.html">
                         <i class="fa-solid fa-comment"></i>
                         <span class="item-description">
                             Feedback
@@ -87,26 +87,19 @@
                 </li>
 
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-phone"></i>
-                        <span class="item-description">
-                            Contato
-                        </span>
-                    </a>
-                </li>
-
                 <button id="open_btn">
                     <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
                 </button>
         </div>
 
         <div id="perfil">
-            <button id="perfil_btn">
-                <i class="fa-solid fa-user"></i>
-                <span class="item_description">
-                    Perfil
-                </span>
+            <button id="perfil_btn" type="button" style="cursor: pointer;">
+                <a href="/codigo/src/assets/pages/login.html">
+                    <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                    <span class="item_description">
+                        Sair
+                    </span>
+                </a>
             </button>
         </div>
     </nav>
@@ -127,9 +120,9 @@
                                 <div class="descri">Descrição do Produto</div>
                                 <div class="quantity-adjuster">
                                     <div class="qty">
-                                        <img class="minus-icon" src="\codigo\src\assets\images\minus.svg" />
+                                        <img class="minus-icon" src="../../assets/images/icons/minus.svg" />
                                         <div class="quantity-value">1</div>
-                                        <img class="plus-icon" src="\codigo\src\assets\images\sandu11.jpgplus.svg" />
+                                        <img class="plus-icon" src="../../assets/images/icons/plus.svg" />
                                     </div>
                                     <div class="remover">Remover</div>
                                 </div>
@@ -155,8 +148,8 @@
                 </div>
                 <div class="separator"></div>
                 <div class="add-payment-method">
-                    <img src="\codigo\src\assets\images\plus2.svg" />
-                    <a href="\codigo\src\assets\pages\cartao.html">
+                    <img src="../../assets/images/icons/plus2.svg" />
+                    <a href="../pages/cartao.html">
                         <div class="button-add-payment-method">
                             <div class="addButonMethod">Adicionar Metodo de pagamento</div>
                         </div>
@@ -183,8 +176,9 @@
             </button>
         </div>
     </div>
-    <script src="\codigo\src\assets\js\script.js"></script>
-    <script src="\codigo\src\assets\js\scriptCarrinho.js"></script>
+    <!-- <script src="../js/script.js"></script> -->
+    <script src="../js/scriptCarrinho.js"></script>
+    <script src="../js/script.aliementos.js"></script>
 </body>
 
 <!-- template-headerPrice -->
@@ -197,9 +191,8 @@
 <div class="method1" id="templateCard" style="display: none;">
     <div class="method-selection">
         <input class="selected-area" type="radio" />
-
         <div class="card-details">
-            <img src="\codigo\src\assets\images\Burger Sandwich.svgvisa.svg" />
+            <img src="../../assets/images/icons/visa.svg" />
 
             <div class="div">•••• 6754</div>
         </div>

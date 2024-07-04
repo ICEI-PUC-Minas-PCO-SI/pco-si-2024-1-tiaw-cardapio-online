@@ -2,19 +2,19 @@
 "Carrosssel1": [
         {
             "id": "1",
-            "img": "/codigo/src/assets/images/pizza-gostosa-.avif",
+            "img": "../images/pizza-gostosa-.avif",
             "descricao": "Imagem de pizza 1",
             "classificacao": "Pizza "
         },
         {
             "id": "2",
-            "img": "/codigo/src/assets/images/images (4).jpeg",
+            "img": "../assets/images/images (4).jpeg",
             "descricao": "Imagem de pizza 2",
             "classificacao": "Pizza "
         },
         {
             "id": "3",
-            "img": "/codigo/src/assets/images/image 7.png",
+            "img": "../assets/images/image 7.png",
             "descricao": "Imagem de pizza 3",
             "classificacao": "Pizza "
         }
@@ -22,19 +22,19 @@
     "Carrosssel2": [
         {
             "id": "6",
-            "img": "/codigo/src/assets/images/Beef Burger.svg",
+            "img": "../assets/images/Beef Burger.svg",
             "descricao": "Imagem de Hambúrguer 1",
             "classificacao": "Hambúrguer"
         },
         {
             "id": "7",
-            "img": "/codigo/src/assets/images/Chicken Burger.svg",
+            "img": "../assets/images/Chicken Burger.svg",
             "descricao": "Imagem de Hambúrguer 2",
             "classificacao": "Hambúrguer "
         },
         {
             "id": "8",
-            "img": "/codigo/src/assets/images/Cheese Burger.svg",
+            "img": "../assets/images/Cheese Burger.svg",
             "descricao": "Imagem de Hambúrguer 3",
             "Gênero": "Hambúrguer"
         }

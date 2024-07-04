@@ -11,6 +11,7 @@
     margin-left: 55rem;
     border-radius: 0px 0px 0px 90px;
     margin-top: -23rem;
+    float: right;
 }
 
 .fundo{
@@ -18,9 +19,9 @@
     display: block;
 }
 .menu{
-    display: flex;
     margin-left: 18rem;
-    margin-top: 10rem;
+    padding-bottom: 9rem;
+    padding-top: 10rem;
 }
 .button{
     display: flex;
@@ -34,8 +35,10 @@
 }
 
 
+
 .alinha{
     display: flex;
+    margin-top: 10rem;
 }
 .categorias{
     margin-left: 12rem;
@@ -469,6 +472,7 @@ main{
 #sidebar.open-sidebar .item-description{
     width: 150px;
     height: auto;
+    padding-left: 10px;
 }
 
 #sidebar.open-sidebar.side-item a{
@@ -695,4 +699,8 @@ input{
 
 #radio3:checked ~ .first {
     margin-left: -68%;
+}
+#perfil_btn a{
+    text-decoration: none;
+    color: white;
 }

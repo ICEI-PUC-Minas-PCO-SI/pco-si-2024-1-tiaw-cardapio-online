@@ -45,6 +45,10 @@
     --br-3xs: 10px;
 }
 
+.method-selection input {
+    display: block !important;
+}
+
 .table-headers-row-parent {
     align-self: stretch;
     display: flex;

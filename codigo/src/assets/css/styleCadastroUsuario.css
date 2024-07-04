@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url("../images/bg2.png");
+  background-position: right center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: gradient(to right, #ffffff, #ffcf86);
+}
+
+.main {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+}
+
+.title-header{
+  margin-right: 210px;
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url("../fonts/static/Poppins-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Noto";
+  src: url("../fonts/static/NotoSans-Regular.ttf") format("truetype");
+}
+
+.header {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 600;
+  padding-top: 40px;
+  font-family: PoppinsMedium;
+}
+
+#confirmPassword{
+  margin-bottom: 10px !important;
+}
+
+.form-container {
+  padding: 20px;
+  width: 20%;
+  margin: 30px 10% auto 10%;
+}
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #666666;
+  font-weight: 600;
+  font-family: Noto;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 15px 19px;
+  margin-bottom: 35px;
+  border-radius: 9px;
+  border: 1px solid #ccc;
+}
+
+/* input[type="password"] {
+  width: 100%;
+  padding: 15px 19px;
+  margin-bottom: 35px;
+  border-radius: 9px;
+  border: 1px solid #ccc;
+} */
+
+#passwordMatch{
+color: red;
+}
+
+
+select {
+  width: 106%;
+  cursor: pointer;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+textarea,
+::placeholder {
+  color: #666666;
+  font-family: Noto;
+  font-size: 18px;
+}
+
+.btn-salvar {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+
+  button {
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+  }
+
+  .save-button {
+    background-color: black;
+  }
+}
+
+.redi-button {
+  margin-top: 40px;
+  button{ 
+    background-color: #bb3939;
+    color: white;
+    padding: 18px 22px;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+  }
+}
+
+/* Hide the default file input button */
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.file-upload-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  margin-top: 70px;
+}
+
+/* Style the custom button */
+.custom-file-input::before {
+  content: "Adicionar foto de perfil";
+  display: inline-block;
+  background: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid #999;
+  border-radius: 12px;
+  padding: 8px 13px;
+  cursor: pointer;
+  text-shadow: 1px 1px #fff;
+  font-weight: 500;
+  font-size: 10pt;
+  font-family: Noto;
+  margin-bottom: 20px;
+}
+
+/* Hover effect */
+.custom-file-input:hover::before {
+  border-color: black;
+}
+
+/* Active state */
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}
+
+/* Hide the default input element */
+input[type="file"] {
+  display: none;
+}
+
+.upload{
+  text-align: center;
+}

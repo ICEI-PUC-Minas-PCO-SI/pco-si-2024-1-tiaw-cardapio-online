@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt.br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.alimentos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!--COMEÇO DA BARRA LATERAL-->
+    <nav id="sidebar">
+        <div id="sidebar_content">
+            <div id="user">
+                <img src="../assets/images/logofod.jpg" id="user_avatar" alt="Avatar">
+                <p class="user_infos">
+                    <span class="item-description">
+                    </span>
+                </p>
+            </div>
+
+            <ul id="side_items">
+                <li class="side-item active">
+                    <a href="../assets/index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span class="item-description">
+                            Home
+                        </span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="../assets/pages/perfil.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="item-description">
+                            Perfil
+                        </span>
+                    </a>
+                </li>
+
+
+
+                <li class="side-item">
+                    <a href="../assets/pages/carrinho.html">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="item-description">
+                            Carrinho de compras
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="../assets/pages/historicoPedidos.html">
+                        <i class="fa-solid fa-clock"></i>
+                        <span class="item-description">
+                            Históricos de pedidos
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="../assets/pages/favoritos.html">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="item-description">
+                            Favoritos
+                        </span>
+                    </a>
+                </li>
+
+                <li class="side-item">
+                    <a href="../assets/pages/cartao.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span class="item-description">
+                            Meus cartões
+                        </span>
+                    </a>
+                </li>
+
+
+                <li class="side-item">
+                    <a href="../assets/pages/feedback.html">
+                        <i class="fa-solid fa-comment"></i>
+                        <span class="item-description">
+                            Feedback
+                        </span>
+                    </a>
+                </li>
+
+
+                <button id="open_btn">
+                    <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+                </button>
+        </div>
+
+        <div id="perfil">
+            <button id="perfil_btn" type="button" style="cursor: pointer;" onclick="redirectLogin()">
+                <i class="fa-solid fa-arrow-right-to-bracket"></i>
+                <span class="item_description">
+                    Sair
+                </span>
+            </button>
+        </div>
+    </nav>
+    <!--FINAL DA BARRA LATERAL E COMEÇO DO MENU-->
+    <main>
+        <div class="menu">
+            <div class="barra">
+
+            </div>
+        </div>
+        </div>
+
+
+        <div class="laranja">
+            <img src="../assets/images/bg2.png" alt="">
+            <div class="fundo">
+                <img src="../assets/images/slider (1).png" alt="">
+            </div>
+        </div>
+        <div class="alinha">
+            <div class="categorias">
+                <a href="../assets/pages/pizza.html">
+                    <button class="buton">
+                        <figure id="fig1">
+                            <img src="../assets/images/pizza (2).png"
+                                onmouseover="this. src='../assets/images/pizza (3).png'" class="img"
+                                onmouseout="this. src='../assets/images/pizza (2).png'">
+                        </figure>
+                        <div class="cater2">
+                            Pizza
+                        </div>
+                    </button>
+                </a>
+            </div>
+            <div class="categorias2">
+                <a href="../assets/pages/hamburguer.html">
+                    <button class="buton">
+                        <figure id="fig2">
+                            <img src="../assets/images/burguer (3).png"
+                                onmouseover="this. src='../assets/images/burguer (2).png'" class="img"
+                                onmouseout="this. src='../assets/images/burguer (3).png'">
+                        </figure>
+                        <div class="cater">
+                            Burguer
+                        </div>
+                    </button>
+                </a>
+            </div>
+            <div class="categorias3">
+                <a href="../assets/pages/sanduiche.html">
+                    <button class="buton">
+                        <figure id="fig3">
+                            <img src="../assets/images/sandwich.png"
+                                onmouseover="this. src='../assets/images/sandwich (1).png'" class="img"
+                                onmouseout="this. src='../assets/images/sandwich.png'">
+                        </figure>
+                        <div class="cater3">
+                            Sanduíche
+                        </div>
+                    </button>
+                </a>
+            </div>
+            <div class="categorias4">
+                <a href="../assets/pages/frango.html">
+                    <button class="buton">
+                        <figure id="fig4">
+                            <img src="../assets/images/frango-frito.png"
+                                onmouseover="this. src='../assets/images/frango-frito (1).png'" class="img"
+                                onmouseout="this. src='../assets/images/frango-frito.png'">
+                        </figure>
+                        <div class="cater4">
+                            Frango
+                        </div>
+                    </button>
+                </a>
+            </div>
+            <div class="categorias5">
+                <a href="../assets/pages/massas.html">
+                    <button class="buton">
+                        <figure id="fig5">
+                            <img src="../assets/images/espaguete.png"
+                                onmouseover="this. src='../assets/images/espaguete (1).png'" class="img"
+                                onmouseout="this. src='../assets/images/espaguete.png'">
+                        </figure>
+                        <div class="cater5">
+                            Massas
+                        </div>
+                    </button>
+                </a>
+            </div>
+            <div class="categorias6">
+                <a href="../assets/pages/Fritas.html">
+                    <button class="buton">
+                        <figure id="fig6">
+                            <img src="../assets/images/batatas-fritas (2).png"
+                                onmouseover="this. src='../assets/images/batatas-fritas (3).png'" class="img"
+                                onmouseout="this. src='../assets/images/batatas-fritas (2).png'">
+                        </figure>
+                        <div class="cater6">
+                            Fritas
+                        </div>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </main>
+    <script src="../assets/js/script.aliementos.js"></script>
+</body>
+
+</html>

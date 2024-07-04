@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 20px;
-  background-image: url("../assets/images/bg2.png");
+  padding: 0;
+  background-image: url("../images/bg2.png");
   background-position: right center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -11,14 +11,26 @@ body {
 
 @font-face {
   font-family: "PoppinsMedium";
-  src: url("assets/fonts/Poppins-Medium.ttf") format("truetype");
+  src: url("../fonts/static/Poppins-Medium.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Noto";
-  src: url("assets/fonts/NotoSans-Regular.ttf") format("truetype");
+  src: url("../fonts/static/NotoSans-Regular.ttf") format("truetype");
 }
 
+
+.redi-button {
+  margin-top: 40px;
+  button{ 
+    background-color: #222222;
+    color: white;
+    padding: 18px 22px;
+    border: none;
+    border-radius: 11px;
+    cursor: pointer;
+  }
+}
 .main {
   display: flex;
   flex-direction: column;

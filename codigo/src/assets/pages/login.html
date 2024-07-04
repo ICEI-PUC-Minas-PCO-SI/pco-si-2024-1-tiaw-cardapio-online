@@ -2,46 +2,56 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/codigo\src\assets\css\styleLogin.css">
-    <title>Login</title>
-    <script defer src="/codigo\src\assets\js\script.js"></script> <!-- Adicione esta linha -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../assets/css/styleLogin.css" />
+  <title>Login</title>
+  <script defer src="../../assets/js/script.js"></script>
+  <!-- Adicione esta linha -->
 </head>
 
 <body>
-    <div class="container">
-        <div class="form-image">
-            <img src="/codigo\src\assets\images\undraw_pizza.svg" alt="">
-        </div>
-        <div class="form">
-            <form id="loginForm" action="javascript:void(0);"> <!-- Altere o action -->
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Faça Login</h1>
-                    </div>
-                </div>
-
-                <div class="input-group">
-                    <div class="input-box">
-                        <label for="login">Login</label>
-                        <input id="login" type="text" name="login" placeholder="Digite seu Login" required>
-                    </div>
-
-                    <div class="input-box">
-                        <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
-                    </div>
-
-                    <div class="continue-button">
-                        <button type="submit">Continuar</button> <!-- Altere para um button de submit -->
-                    </div>
-                </div>
-            </form>
-        </div>
+  <div class="container">
+    <div class="form-image">
+      <img src="../../assets/images/undraw_pizza.svg" alt="" />
     </div>
+    <div class="form">
+      <form id="loginForm" action="javascript:void(0);">
+        <!-- Altere o action -->
+        <div class="form-header">
+          <div class="title">
+            <h1>Faça Login</h1>
+          </div>
+        </div>
 
+        <div class="input-group">
+          <div class="input-box">
+            <label for="login">Email</label>
+            <input id="login" type="text" name="login" placeholder="Digite seu email" required />
+          </div>
+
+          <div class="input-box">
+            <label for="password">Senha</label>
+            <input id="password" type="password" name="password" placeholder="Digite sua senha" required />
+          </div>
+
+          <div class="group-buttons">
+            <div class="continue-button">
+              <button type="submit">Fazer Login</button>
+              <!-- Altere para um button de submit -->
+            </div>
+
+            <div class="continue-button">
+              <button type="button"
+                onclick="window.location.href = '../pages/cadastroUsuarios.html'">Cadastre-se</button>
+              <!-- Altere para um button de submit -->
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
